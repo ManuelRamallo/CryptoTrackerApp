@@ -1,4 +1,4 @@
-package com.mramallo.cryptotrackerapp.util
+package com.mramallo.cryptotrackerapp.core.presentation.util
 
 import com.mramallo.cryptotrackerapp.R
 

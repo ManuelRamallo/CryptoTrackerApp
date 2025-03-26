@@ -1,8 +1,8 @@
 package com.mramallo.cryptotrackerapp.crypto.presentation.models
 
 import androidx.annotation.DrawableRes
+import com.mramallo.cryptotrackerapp.core.presentation.util.getDrawableForCrypto
 import com.mramallo.cryptotrackerapp.crypto.domain.Coin
-import com.mramallo.cryptotrackerapp.util.getDrawableForCrypto
 import java.text.NumberFormat
 import java.util.Locale
 
