@@ -12,6 +12,6 @@ fun CoinDto.toCoin(): Coin {
         marketCapUsd = marketCapUsd,
         priceUsd = priceUsd,
         changePercent24Hr = changePercent24Hr,
-        explorer = explorer
+        explorer = explorer ?: ""
     )
 }
