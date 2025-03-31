@@ -6,12 +6,12 @@ import com.mramallo.cryptotrackerapp.crypto.domain.Coin
 fun CoinDto.toCoin(): Coin {
     return Coin(
         id = id,
-        rank = rank,
-        symbol = symbol,
-        name = name,
-        marketCapUsd = marketCapUsd,
-        priceUsd = priceUsd,
-        changePercent24Hr = changePercent24Hr,
+        rank = rank ?: 0,
+        symbol = symbol ?: "",
+        name = name ?: "",
+        marketCapUsd = marketCapUsd ?: 0.0,
+        priceUsd = priceUsd ?: 0.0,
+        changePercent24Hr = changePercent24Hr ?: 0.0,
         explorer = explorer ?: ""
     )
 }
