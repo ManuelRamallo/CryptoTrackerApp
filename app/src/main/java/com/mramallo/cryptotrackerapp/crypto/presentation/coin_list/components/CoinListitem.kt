@@ -91,7 +91,7 @@ fun CoinListItem(
 fun CoinListItemPreview(modifier: Modifier = Modifier) {
     CryptoTrackerAppTheme {
         CoinListItem(
-            coinUi = previewCoin.toCoinUi(),
+            coinUi = previewCoin,
             onClick = {},
             modifier = Modifier.background(MaterialTheme.colorScheme.primaryContainer)
         )
@@ -107,4 +107,4 @@ internal val previewCoin = Coin(
     priceUsd = 645435.2,
     changePercent24Hr = 0.1,
     explorer = "url"
-)
+).toCoinUi()
