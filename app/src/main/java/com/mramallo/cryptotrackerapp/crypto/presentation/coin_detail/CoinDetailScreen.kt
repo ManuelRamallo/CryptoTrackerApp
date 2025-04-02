@@ -109,7 +109,7 @@ fun CoinDetailScreen(
                 val absoluteChangeFormatted =
                     (coin.priceUsd.value * (coin.changePercent24Hr.value / 100)).toDisplayableNumber()
                 val isPositive = coin.changePercent24Hr.value > 0.0
-                val contentColorPositiveNegative = if (isPositive) {
+                val contentColorChangeLast24h = if (isPositive) {
                     if (isSystemInDarkTheme()) Color.Green else greenBackground
                 } else {
                     MaterialTheme.colorScheme.error
@@ -120,7 +120,7 @@ fun CoinDetailScreen(
                     formattedText = absoluteChangeFormatted.formatted,
                     icon = if (isPositive) ImageVector.vectorResource(id = R.drawable.trending)
                     else ImageVector.vectorResource(id = R.drawable.trending_down),
-                    contentColor = contentColorPositiveNegative,
+                    contentColor = contentColorChangeLast24h,
                 )
 
             }
