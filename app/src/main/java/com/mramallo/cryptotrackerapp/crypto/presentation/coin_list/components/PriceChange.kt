@@ -48,7 +48,7 @@ fun PriceChange(
         verticalAlignment = Alignment.CenterVertically
     ) {
         Icon(
-            imageVector = if (change.value < 0.0) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
+            imageVector = if (change.value >= 0.0) Icons.Default.KeyboardArrowUp else Icons.Default.KeyboardArrowDown,
             contentDescription = null,
             modifier = Modifier.size(20.dp),
             tint = contentColor
