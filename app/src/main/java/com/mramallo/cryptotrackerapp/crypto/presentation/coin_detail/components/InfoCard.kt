@@ -54,7 +54,7 @@ fun InfoCard(
             ),
         shape = RectangleShape,
         border = BorderStroke(
-            width = 1.dp,
+            width = 1.5.dp,
             color = MaterialTheme.colorScheme.primary
         ),
         colors = CardDefaults.cardColors(
