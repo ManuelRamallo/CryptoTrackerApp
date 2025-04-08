@@ -64,9 +64,7 @@ fun AdaptiveCoinListDetailPane(
                                 }
                             }
 
-                            is CoinListAction.OnRefresh -> {
-                                /* TODO - ADD REFRESH HERE*/
-                            }
+                            is CoinListAction.OnRefresh -> {} // No operation needed here
                         }
                     }
                 )

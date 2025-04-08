@@ -17,7 +17,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.PreviewLightDark
@@ -25,7 +24,6 @@ import androidx.compose.ui.unit.dp
 import com.mramallo.cryptotrackerapp.crypto.presentation.coin_list.components.CoinListItem
 import com.mramallo.cryptotrackerapp.crypto.presentation.coin_list.components.previewCoin
 import com.mramallo.cryptotrackerapp.ui.theme.CryptoTrackerAppTheme
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -35,31 +33,26 @@ fun CoinListScreen(
     onAction: (CoinListAction) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    var isRefreshing by remember { mutableStateOf(state.isLoading) }
+    val isRefreshing by remember { mutableStateOf(state.isLoading) }
     val coroutineScope = rememberCoroutineScope()
 
-    PullToRefreshBox(
-        isRefreshing = isRefreshing,
-        onRefresh = {
-            coroutineScope.launch {
-                println("REFRESHING")
-                isRefreshing = true
-                delay(2000)
-                isRefreshing = false
-            }
-
+    if (state.isLoading) {
+        Box(
+            modifier = modifier
+                .fillMaxSize(),
+            contentAlignment = Alignment.Center
+        ) {
+            CircularProgressIndicator()
         }
-    ) {
-        if (state.isLoading) {
-            Box(
-                modifier = modifier
-                    .fillMaxSize(),
-                contentAlignment = Alignment.Center
-            ) {
-                CircularProgressIndicator()
+    } else {
+        PullToRefreshBox(
+            isRefreshing = isRefreshing,
+            onRefresh = {
+                coroutineScope.launch {
+                    onAction(CoinListAction.OnRefresh)
+                }
             }
-        } else {
-
+        ) {
             LazyColumn(
                 modifier = modifier.fillMaxSize(),
                 verticalArrangement = Arrangement.spacedBy(8.dp)
