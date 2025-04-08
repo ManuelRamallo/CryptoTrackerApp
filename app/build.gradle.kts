@@ -75,6 +75,7 @@ dependencies {
     implementation(libs.bundles.compose)
     implementation(libs.androidx.ui.text.google.fonts)
     debugImplementation(libs.bundles.compose.debug)
+    implementation(libs.androidx.core.splashscreen)
 
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 
