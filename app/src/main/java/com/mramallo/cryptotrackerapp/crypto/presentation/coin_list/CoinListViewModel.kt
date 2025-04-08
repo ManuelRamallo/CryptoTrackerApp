@@ -100,7 +100,7 @@ class CoinListViewModel(
                     }
                 }
                 .onError { error ->
-                    _state.update { it.copy(isLoading = false) }
+                    _state.update { CoinListState() }
                     _events.send(CoinListEvent.Error(error))
                 }
 
