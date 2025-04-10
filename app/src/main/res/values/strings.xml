@@ -8,4 +8,8 @@
     <string name="market_cap">Market Cap</string>
     <string name="price">Price</string>
     <string name="change_last_24h">Change last 24h</string>
+    <string name="empty_state_title">Oops!</string>
+    <string name="empty_state_subtitle">Something went wrong!</string>
+    <string name="empty_state_content">We did not find any cryptocurrencies at the moment. Please check your connection and try again.</string>
+    <string name="button_try_again">Try again</string>
 </resources>
