@@ -1,7 +1,6 @@
 package com.mramallo.cryptotrackerapp.crypto.presentation.coin_list
 
 import androidx.compose.foundation.background
-import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,11 +19,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.unit.dp
 import com.mramallo.cryptotrackerapp.crypto.presentation.coin_list.components.CoinListItem
-import com.mramallo.cryptotrackerapp.crypto.presentation.coin_list.components.EmptyStateList
 import com.mramallo.cryptotrackerapp.crypto.presentation.coin_list.components.previewCoin
 import com.mramallo.cryptotrackerapp.ui.theme.CryptoTrackerAppTheme
 import kotlinx.coroutines.launch
@@ -38,11 +35,6 @@ fun CoinListScreen(
 ) {
     val isRefreshing by remember { mutableStateOf(state.isLoading) }
     val coroutineScope = rememberCoroutineScope()
-    val contentColor = if (isSystemInDarkTheme()) {
-        Color.White
-    } else {
-        Color.Black
-    }
 
     if (state.isLoading) {
         Box(
@@ -53,39 +45,27 @@ fun CoinListScreen(
             CircularProgressIndicator()
         }
     } else {
-        if (state.coins.isEmpty()) {
-            EmptyStateList(
-                modifier = modifier,
-                contentColor = contentColor,
-                onRefresh = {
-                    coroutineScope.launch {
-                        onAction(CoinListAction.OnRefresh)
-                    }
+        PullToRefreshBox(
+            isRefreshing = isRefreshing,
+            onRefresh = {
+                coroutineScope.launch {
+                    onAction(CoinListAction.OnRefresh)
                 }
-            )
-        } else {
-            PullToRefreshBox(
-                isRefreshing = isRefreshing,
-                onRefresh = {
-                    coroutineScope.launch {
-                        onAction(CoinListAction.OnRefresh)
-                    }
-                }
+            }
+        ) {
+            LazyColumn(
+                modifier = modifier.fillMaxSize(),
+                verticalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                LazyColumn(
-                    modifier = modifier.fillMaxSize(),
-                    verticalArrangement = Arrangement.spacedBy(8.dp)
-                ) {
-                    items(state.coins) { coinUi ->
-                        CoinListItem(
-                            coinUi = coinUi,
-                            onClick = {
-                                onAction(CoinListAction.OnCoinClick(coinUi))
-                            },
-                            modifier = Modifier.fillMaxWidth()
-                        )
-                        HorizontalDivider()
-                    }
+                items(state.coins) { coinUi ->
+                    CoinListItem(
+                        coinUi = coinUi,
+                        onClick = {
+                            onAction(CoinListAction.OnCoinClick(coinUi))
+                        },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                    HorizontalDivider()
                 }
             }
         }

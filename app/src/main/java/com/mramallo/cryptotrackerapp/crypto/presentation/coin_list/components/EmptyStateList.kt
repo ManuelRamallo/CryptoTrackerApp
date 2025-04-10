@@ -33,6 +33,7 @@ import com.mramallo.cryptotrackerapp.R
 fun EmptyStateList(
     modifier: Modifier = Modifier,
     contentColor: Color,
+    isLandScape: Boolean = false,
     onRefresh: () -> Unit,
 ) {
     val buttonContentColor = if (isSystemInDarkTheme()) {
@@ -61,7 +62,7 @@ fun EmptyStateList(
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
             color = contentColor,
-            textAlign = TextAlign.Left,
+            textAlign = if (isLandScape) TextAlign.Center else TextAlign.Left,
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(4.dp))
@@ -70,7 +71,7 @@ fun EmptyStateList(
             fontSize = 20.sp,
             fontWeight = FontWeight.Medium,
             color = contentColor,
-            textAlign = TextAlign.Left,
+            textAlign = if (isLandScape) TextAlign.Center else TextAlign.Left,
             modifier = Modifier.fillMaxWidth()
         )
         Spacer(modifier = Modifier.height(8.dp))
@@ -79,7 +80,7 @@ fun EmptyStateList(
             fontSize = 12.sp,
             fontWeight = FontWeight.Light,
             color = contentColor,
-            textAlign = TextAlign.Left,
+            textAlign = if (isLandScape) TextAlign.Center else TextAlign.Left,
             lineHeight = 18.sp,
             modifier = Modifier.fillMaxWidth()
         )
