@@ -12,4 +12,6 @@
     <string name="empty_state_subtitle">Something went wrong!</string>
     <string name="empty_state_content">We did not find any cryptocurrencies at the moment. Please check your connection and try again.</string>
     <string name="button_try_again">Try again</string>
+    <string name="empty_state_coin_not_selected_title">No selected Crypto</string>
+    <string name="empty_state_coin_not_selected_subtitle">You have not selected a crypto, please select one to see the details</string>
 </resources>
