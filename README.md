@@ -52,6 +52,7 @@ Our cryptocurrency application relies on data provided by an external API. This 
 
 
 # <b> Images &nbsp;🏞️ </b>
+[Banner]: https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Banner%20CryptoCurrency%20App.png "Banner"
 
 
 
