@@ -23,13 +23,13 @@ Our cryptocurrency application relies on data provided by an external API. This 
 
 ### Steps for Obtaining and Encrypting the API Key in the Application
 
-<b><i>1. Get the KEY API<i/></b>
+<b><i>1. Get the KEY API</i></b>
 * Navigate to the CoinCap page to obtain the API Key and register on the site if you have not already done so.:
   * URL: https://pro.coincap.io/dashboard
 * Once registered, log in to your developer dashboard and request an API KEY.
 * Save the API Key you get, as you will need it in the next steps.
 
-<b><i>2. Encrypt the API KEY<i/></b>
+<b><i>2. Encrypt the API KEY</i></b>
 * Once you have the API KEY, go to the following page to encrypt it:
   * URL: https://www.devglan.com/online-tools/aes-encryption-decryption
 * On the encryption page, perform the following steps:
@@ -41,18 +41,26 @@ Our cryptocurrency application relies on data provided by an external API. This 
 * Click the Encrypt button to encrypt your API Key.
 * Once the encryption is complete, you will see the encrypted key in the Encrypted Text box. Save this encrypted key, as you will need it for the next step.
 
-<b><i>3. Modify the Application Code<i/></b>
+<b><i>3. Modify the Application Code</i></b>
 * Access the source code of your application and navigate to the following file:
   * Path: com/mramallo/cryptotrackerapp/core/domain/util/Constants.kt
 * Locate the encrypted API KEY inside this file.
 * Find the existing encrypted key (if there is already an encrypted API Key).
 * Replace the existing encrypted key with the new encrypted key you obtained in the previous step.
 
-<b><i>4. Run the application and try again<i/></b>
+<b><i>4. Run the application and try again</i></b>
 
 
 # <b> Images &nbsp;🏞️ </b>
 ![Banner](https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Banner%20CryptoCurrency%20App.png "Banner")
+
+## <b> Portrait App </b>
+
+| asdfdsaf | Coin List | Coin Detail | Line Chart Selected | Error |
+| :---         |     :---:      |     :---:     |      :---:      |     :---:     |
+| LIGTH   | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Light.png" width ="200"> |
+| DARK    | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Dark.png" width ="200">  | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Dark.png" width ="200">
+
 
 
 
