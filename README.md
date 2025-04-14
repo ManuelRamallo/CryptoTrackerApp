@@ -54,13 +54,17 @@ Our cryptocurrency application relies on data provided by an external API. This 
 # <b> Images &nbsp;🏞️ </b>
 ![Banner](https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Banner%20CryptoCurrency%20App.png "Banner")
 
-## <b> Portrait App </b>
+### Portrait App
 
-| asdfdsaf | Coin List | Coin Detail | Line Chart Selected | Error |
-| :---         |     :---:      |     :---:     |      :---:      |     :---:     |
-| LIGTH   | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Light.png" width ="200"> |
-| DARK    | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Dark.png" width ="200">  | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Dark.png" width ="200">
+|  | Splash | Coin List | Coin Detail | Line Chart Selected | Error |
+|     :---:     |     :---:      |     :---:     |      :---:      |     :---:     |     :---:     |
+| LIGTH   | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Splash.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Light.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Light.png" width ="200"> |
+| DARK    | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Splash.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20List%20Dark.png" width ="200">  | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Coin%20Detail%20LineChart%20Selected%20Dark.png" width ="200"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Portrait/Error%20Screen%20Dark.png" width ="200">
 
+### Landscape App
 
-
+|  | Splash | Coin List | Coin Detail | Line Chart Selected | Error |
+|     :---:     |     :---:      |     :---:     |      :---:      |     :---:     |     :---:     |
+| LIGTH   | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Splash%20Landscape.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Landscape.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Selected%20LineChart%20Landscape.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Selected%20LineChart%20Landscape.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/CoinList%20Error%20Landscape.png" width ="600"> |
+| DARK    | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Splash%20Landscape.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Unselected%20Landscape%20dark.png" width ="600">  | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Landscape%20Dark.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/Coin%20List%20Selected%20Linechart%20Landscape%20Dark.png" width ="600"> | <img src="https://github.com/ManuelRamallo/CryptoTrackerApp/blob/main/resources/Landscape/CoinList%20Error%20Landscape%20Dark.png" width ="200">
 
