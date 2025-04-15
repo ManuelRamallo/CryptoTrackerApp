@@ -19,7 +19,7 @@ Application for tracker cryptocurrency developed in native Android
 
 ### Introduction
 
-Our cryptocurrency application relies on data provided by an external API. This API has a monthly limit of uses (queries) that can be reached at certain times, which can lead to failures in the functionality of the application. In this document, we explain how this usage limit can affect the performance of the application and what steps to take to fix it.
+My cryptocurrency application relies on data provided by an external API. This API has a monthly limit of uses (queries) that can be reached at certain times, which can lead to failures in the functionality of the application. In this document, we explain how this usage limit can affect the performance of the application and what steps to take to fix it.
 
 ### Steps for Obtaining and Encrypting the API Key in the Application
 
